@@ -13,7 +13,12 @@
                 "kind": "test",
                 "isDefault": true
             },
-            "label": "Rust: cargo test - Rust2048"
+            "label": "Rust: cargo test - Rust2048",
+            "options": {
+                "env": {
+                "RUST_BACKTRACE" : "1"
+                }
+            }
         },
         {
             "type": "cargo",
