@@ -4,7 +4,7 @@ extern crate rand_chacha;
 use rand::prelude::*;
 use rand::{Rng, SeedableRng};
 
-pub struct GameIndex {
+struct GameIndex {
     r: usize,
     c: usize
 }
@@ -161,10 +161,6 @@ impl Game {
 
     fn row_col_to_idx(&self, rc:&GameIndex) -> usize {
         return (rc.r * self.board_height) + rc.c;
-    }
-
-    fn set_board(&mut self, board:[u32; 16]) {
-        self.board = board;
     }
 }
 
