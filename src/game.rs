@@ -48,10 +48,6 @@ impl Game {
         return result;
     }
 
-    pub fn board(&self) -> std::slice::Iter<u32> {
-        return self.board.iter();
-    }
-
     pub fn score(&self) -> u64 {
         return self.score;
     }
